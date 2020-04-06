@@ -24,11 +24,15 @@ function go(){
       case 2:
         document.getElementById("btn-b").style.display = "block";
         document.getElementById("myVideo1").style.display = "block";
+        //document.getElementById("dwn").style.display = "block";
         y.autoplay = true;
         y.load();
         setTimeout(function() {
             $('#myVideo1').fadeOut('fast');
         }, 10000); // <-- time in milliseconds
+        var url = 'assets/MuhammadFadhil_Act2_AP2.docx';
+
+        document.getElementById('dwn').href = url;
       break;
 
     default:
